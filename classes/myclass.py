@@ -36,7 +36,7 @@ def my_decorator(method):
     def wrapper(self, *args, **kwargs):
         print(f"Before calling method '{method.__name__}'")
         result = method(self, *args, **kwargs)
-        # print(result)
+        print(result)
         print(f"After calling method '{method.__name__}'")
         return result
     return wrapper
@@ -58,5 +58,5 @@ class TestClass:
         return "bye"
     
 obj = TestClass()
-print(obj.hi())
-print(obj.bye())
+obj.hi()
+obj.bye()
