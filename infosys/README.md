@@ -7,10 +7,11 @@ s = "put"
 s[0] = "c"
 print(s)
 ```
+_Output:_ 
+`TypeError: 'str' object does not support item assignment`
 _In Python, string are **immutable**, which means you cannot modify an individual character of a string directly
 when you trying to assign a new value to s[0], Python raise a *TypeError*._
 
-`TypeError: 'str' object does not support item assignment`
 
 2. 
 ```
