@@ -64,4 +64,5 @@ print(d["x"])
 ```
 _Output:_
 `KeyError: 'x'`
+
 This will result in a **KeyError**, because the dictionary does not contain a key **"x"**.
