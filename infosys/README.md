@@ -45,7 +45,7 @@ print(d)
 
 In Python, _dictionary cannot have duplicate keys_, and the final dictionary is **{'a': 100, 'b': 20, 'c': 10}** because of the value of **"a"** was overwritten by **100**
 
-5.
+5. 
 ``` 
 p = [1, 2, 3, 4]
 q = p
@@ -56,3 +56,12 @@ _Output:_
 `[100, 2, 3, 4]`
 
 Both **p** and **q** refer to the same list, so modifying **q** also modify **p**. The first element of list is updated to **100**, and this changes reflected in both **p** and **q**.
+
+6. 
+```
+d = {"a":10, "b":20, "c": 100}
+print(d["x"])
+```
+_Output:_
+`KeyError: 'x'`
+This will result in a **KeyError**, because the dictionary does not contain a key **"x"**.
