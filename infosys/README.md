@@ -2,7 +2,8 @@
 
 ##### Q. What will be the output of the following programs?
 1. 
-```s = "put"
+```
+s = "put"
 s[0] = "c"
 print(s)
 ```
@@ -12,7 +13,8 @@ when you trying to assign a new value to s[0], Python raise a *TypeError*._
 `TypeError: 'str' object does not support item assignment`
 
 2. 
-```s = "put"
+```
+s = "put"
 print(s)
 s = s + "cat"
 print(s)
@@ -26,7 +28,8 @@ print(s)
 instead, it return a new string with all characters in uppercase. However, since the result is not saved, the original string **s** remain unchanged.
 
 3. 
-``` l = [1, 2, 3, 4, 5]
+```
+l = [1, 2, 3, 4, 5]
 print(l[::-1])
 ```
 _Output:_
@@ -35,14 +38,16 @@ _Output:_
 **l[::-1]** uses **list slicing** to create new list, it gives a new list with the element of **l** in reverse order.
 
 4. 
-``` d = {"a":10, "b":20, "c": 10, "a": 100}
+``` 
+d = {"a":10, "b":20, "c": 10, "a": 100}
 print(d)
 ```
 
 In Python, _dictionary cannot have duplicate keys_, and the final dictionary is **{'a': 100, 'b': 20, 'c': 10}** because of the value of **"a"** was overwritten by **100**
 
 5.
-``` p = [1, 2, 3, 4]
+``` 
+p = [1, 2, 3, 4]
 q = p
 q[0] = 100
 print(p)
